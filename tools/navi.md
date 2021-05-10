@@ -58,7 +58,6 @@ pstree
 
 6、最后，使用 `navi` 来查看备忘命令。键入 `navi` 后，按 `Esc` 退出查询模式，按 `Enter` 退出查询模式并执行该命令。
 
-
 ## 与其功能类似的库
 
 [cheat](https://github.com/cheat/cheat)
