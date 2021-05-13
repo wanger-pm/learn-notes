@@ -45,14 +45,15 @@ adduser username
 
 ### 第四步：修改 /etc/vsftpd.conf 配置文件
 
-在 `/etc/vsftpd.conf` 中最下方添加如下配置：
+在 `/etc/vsftpd.conf` 中修改如下配置：
 
 ```bash
+# 打开 write_enable=YES 的注释，这样可以通过 ftp 上传文件到服务器
+write_enable=YES
+# 最下方添加如下配置，注意这里和上面第二步中开放的端口对应
 pasv_min_port=40000
 pasv_max_port=50000
 ```
-
-注意这里和上面第二步中开放的端口对应。
 
 修改好后，重新启动 ftp 服务：
 
