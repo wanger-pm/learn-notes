@@ -224,7 +224,77 @@ console.log(result.toString());
 
 DH算法是一种密钥交换协议，它可以让双方在不泄漏密钥的情况下协商出一个密钥来。
 
-<!-- todo -->
+### 数学基础
+
+DH算法的数学基础如下：
+
+- 假设 A = K^X mod M，已知 X 的情况下，很容易算出 A；已知道 A 的情况下，很难算出X；
+- (K^X mod M)^Y mod M = K^(X * Y) mod M
+
+### 用 node 模拟 HD 算法过程
+
+X 先选一个素数和一个底数：素数 M=97，底数 K=31（底数可以任选），再选择一个秘密整数 X=5，计算 A=K^X mod M=86，然后告诉Y：K=31，M=97，A=86；
+Y 收到 X 发来的 K，M，A后，也选一个秘密整数 Y=7，然后计算 B=K^Y mod M=2，并告诉X：B=2；
+
+X 自己计算出 key=B^Y mod M=32;
+Y 也自己计算出 key=A^Y mod M=32;
+
+因此，最终协商的密钥 key 为 32。
+
+```js
+const K = 31  // 底数
+const M = 97  // 取模（需要是质数）
+
+const X = 5   // X 的私钥
+const A = Math.pow(K, X) % M; // 86
+
+const Y = 7   // Y 的私钥
+const B = Math.pow(K, Y) % M; // 2
+
+console.log(Math.pow(B, X) % M); // X 计算出的密钥：32
+console.log(Math.pow(A, Y) % M); // Y 计算出的密钥：32
+```
+
+### 使用 crypto 中的 DH 算法
+
+```js
+const crypto = require('crypto');
+
+// X 生成 key
+const X = crypto.createDiffieHellman(512);
+
+const prime = X.getPrime();                       // 公开的随机数
+console.log('Prime: ' + prime.toString('hex'));
+
+const X_PublicKey = X.generateKeys();             // X 生成用于交换的 key
+const X_PrivateKey = X.getPrivateKey();           // X 自己的私钥
+
+console.log('X_PublicKey', X_PublicKey.toString('hex'));
+console.log('X_PrivateKey', X_PrivateKey.toString('hex'));
+
+// Y 生成 keys
+const Y = crypto.createDiffieHellman(prime);      // 根据公开的随机数创建 Y
+const Y_PublicKey = Y.generateKeys();             // Y 生成用于交换的 key
+const Y_PrivateKey = Y.getPrivateKey();           // Y 自己的私钥
+
+console.log('Y_PublicKey', Y_PublicKey.toString('hex'));
+console.log('Y_PrivateKey', Y_PrivateKey.toString('hex'));
+
+// 交换生成协商密钥：
+console.log('Secret of X: ' + X.computeSecret(Y_PublicKey).toString('hex'));
+console.log('Secret of Y: ' + Y.computeSecret(X_PublicKey).toString('hex'));
+
+// out:
+// Prime: c17a5d01bf84632f164b45cea4061602f0bb9d37b34ab6fcd8afff029172ce1bf3b6459244be0fe54c31b59efca7a439d58da18e90471def8a5d4195c0aa9bab
+// X_PublicKey a4612c019051615204760e62623b04fc4740f33575704314f3f4286c79ed3b87d1764391e03df3b783c3455b31afb5c24e5db69345a93159ac6b81ef49f5f0b5
+// X_PrivateKey 44b54320bc5f3c3fd12183f2d4cdee0fe097f2a9f014c8fdec08e0510be3b68bf713dbdd58b7a689f72fa63f8d778d4d3f2756736ed626dc72d3c118171dc024
+// Y_PublicKey 473ba37e71c54034aa98492825301b587e483845cb176d42f663b81598b685706d05bfe2b5531e6873f799de067ffb8281245c8461d0a4d5a8897bf1cd6252f2
+// Y_PrivateKey 6e8940a33f92f69d9dca023958db8e10f5a39180b243c68e18d4efbfcdee1d795ac608fef29294affc777a80fe301ea8ba8a32c71318d4914a99f53d7d2e9b32
+// Secret of X: bf26f9654e2ec0c0c504ed321ab41b55d7014aabff0d89bb4d3a542fcf179342c293627443c3141cfe04c34cac357977bae610175e889d4d8557bce89e431b31
+// Secret of Y: bf26f9654e2ec0c0c504ed321ab41b55d7014aabff0d89bb4d3a542fcf179342c293627443c3141cfe04c34cac357977bae610175e889d4d8557bce89e431b31
+```
+
+可以看到 X 和 Y 在没有暴露自己的私钥的情况下，最后生成了相同的密钥。
 
 ## 数字签名
 
@@ -317,7 +387,7 @@ console.log(md5_3('hello').toString());
 
 ## 最后
 
-最后，再看一个讲密码学很好的入门视频[计算机科学速成课 p33 加密](https://www.bilibili.com/video/BV1EW411u7th?p=33)
+最后，推荐一个科普密码学很好的视频[计算机科学速成课 p33 加密](https://www.bilibili.com/video/BV1EW411u7th?p=33)
 
 ## 参考文章
 
