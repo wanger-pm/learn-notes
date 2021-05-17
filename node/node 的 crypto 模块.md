@@ -220,6 +220,8 @@ console.log(secret); // buffer格式
 console.log(result.toString()); 
 ```
 
+RSA 的原理可以参考阮一峰的文章 [RSA算法原理（一）](http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html) 和 [RSA算法原理（二）](http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html)。
+
 ## Diffie-Hellman
 
 DH算法是一种密钥交换协议，它可以让双方在不泄漏密钥的情况下协商出一个密钥来。
