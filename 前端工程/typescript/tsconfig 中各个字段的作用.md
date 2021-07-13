@@ -59,7 +59,7 @@
 
 参考链接：
 
-[tsconfig 编译上下文](https://jkchao.github.io/typescript-book-chinese/project/compilationContext.html#%E7%BC%96%E8%AF%91%E9%80%89%E9%A1%B9)
+[深入理解 TypeScript: 编译上下文](https://jkchao.github.io/typescript-book-chinese/project/compilationContext.html#%E7%BC%96%E8%AF%91%E9%80%89%E9%A1%B9)
 
 [Typescript tsconfig.json全解析](https://lq782655835.github.io/blogs/project/ts-tsconfig.html)
 
