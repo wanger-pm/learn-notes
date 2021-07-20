@@ -1,5 +1,7 @@
 # electron 缓存路径
 
+## electron-builder 缓存路径
+
 - macOS: ~/Library/Caches/electron-builder
 - Linux: ~/.cache/electron-builder
 - windows: %LOCALAPPDATA%\electron-builder\cache
