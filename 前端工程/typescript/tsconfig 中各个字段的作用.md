@@ -268,6 +268,8 @@ define(["require", "exports"], function (require, exports) {
 
 参考链接：
 
+[tsconfig Docs](https://www.typescriptlang.org/tsconfig)
+
 [typescript 的 paths 配置](https://www.douchange.com/2020/08/12/typescript%E7%9A%84paths%E9%85%8D%E7%BD%AE/)
 
 [TypeScript issue 10866](https://github.com/microsoft/TypeScript/issues/10866)
