@@ -37,3 +37,7 @@ JS 数据验证库
 
 [prisma docs: prisma vs typeorm](https://www.prisma.io/docs/concepts/more/comparisons/prisma-and-typeorm)
 [betterprogramming: prisma vs typeorm](https://betterprogramming.pub/prisma-vs-typeorm-60d02f9dac64)
+
+### 获取可用端口
+
+- [get-port](https://github.com/sindresorhus/get-port) 简单易用
