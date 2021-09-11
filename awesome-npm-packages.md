@@ -41,3 +41,7 @@ JS 数据验证库
 ### 获取可用端口
 
 - [get-port](https://github.com/sindresorhus/get-port) 简单易用
+
+### 可以通过进程名获取 pid, 然后 kill
+
+- [ps](https://github.com/neekey/ps)
