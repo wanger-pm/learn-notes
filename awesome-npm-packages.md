@@ -45,3 +45,10 @@ JS 数据验证库
 ### 可以通过进程名获取 pid, 然后 kill
 
 - [ps](https://github.com/neekey/ps)
+
+### 富文本编辑器
+
+- [Draft.js](https://draftjs.org/) 好像是 Facebook 出品的，偏向 Markdown 风格，貌似不支持插入图片
+- [quill](https://quilljs.com/) 风格更为现代，不过没有实际使用过
+- [wangEditor](https://www.wangeditor.com/) 国人编写的富文本编辑器，使用方式比较符合国情
+- [tinymce](https://github.com/tinymce/tinymce) Typescript 编写，下载量比较大，不过没有实际使用过
