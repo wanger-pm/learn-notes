@@ -92,5 +92,47 @@ COMMIT;
 PRAGMA foreign_keys=on;
 ```
 
+举例：
+
+```sql
+-- article 表 添加 description 字段
+
+PRAGMA foreign_keys=off;
+
+BEGIN TRANSACTION;
+
+-- DROP TABLE _article_old;
+
+ALTER TABLE article RENAME TO _article_old;
+
+CREATE TABLE "article" (
+  "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, 
+  "title" varchar NOT NULL, 
+  "description" varchar NOT NULL, 
+  "content" varchar NOT NULL, 
+  "createTime" datetime NOT NULL DEFAULT (datetime('now')), 
+  "updateTime" datetime NOT NULL DEFAULT (datetime('now')), 
+  "deleteTime" datetime, 
+  "authorId" integer, CONSTRAINT "FK_a9c5f4ec6cceb1604b4a3c84c87" FOREIGN KEY ("authorId") REFERENCES "user" ("id") ON DELETE NO ACTION ON UPDATE NO ACTION
+);
+
+INSERT INTO article (title, description, content,createTime ,updateTime, deleteTime, authorId)
+  SELECT title,substr(content, 1, 200), content,createTime ,updateTime, deleteTime, authorId
+  FROM _article_old;
+
+COMMIT;
+
+PRAGMA foreign_keys=on;
+```
+
 参考自 [SQLite: ALTER TABLE Statement](https://www.techonthenet.com/sqlite/tables/alter_table.php)
 
+## 复制表
+
+```sql
+-- 完整复制表
+CREATE TABLE _article_old_bak AS SELECT * FROM article
+
+-- 复制表结构
+CREATE TABLE _article_old_bak AS SELECT * FROM article WHERE 0
+```
