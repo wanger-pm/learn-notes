@@ -52,3 +52,7 @@ JS 数据验证库
 - [quill](https://quilljs.com/) 风格更为现代，不过没有实际使用过
 - [wangEditor](https://www.wangeditor.com/) 国人编写的富文本编辑器，使用方式比较符合国情
 - [tinymce](https://github.com/tinymce/tinymce) Typescript 编写，下载量比较大，不过没有实际使用过
+
+### 其他
+
+- [tsconfig-paths](https://www.npmjs.com/package/tsconfig-paths) 在 node 或者 ts-node 中解析 tsconfig.json 中映射的路径。
