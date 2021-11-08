@@ -53,6 +53,12 @@ JS 数据验证库
 - [wangEditor](https://www.wangeditor.com/) 国人编写的富文本编辑器，使用方式比较符合国情
 - [tinymce](https://github.com/tinymce/tinymce) Typescript 编写，下载量比较大，不过没有实际使用过
 
+### 跨桌面端程序
+
+- [electron](https://github.com/electron/electron)
+- [nw.js](https://github.com/nwjs/nw.js)
+- [tauri](https://github.com/tauri-apps/tauri)
+
 ### 其他
 
 - [tsconfig-paths](https://www.npmjs.com/package/tsconfig-paths) 在 node 或者 ts-node 中解析 tsconfig.json 中映射的路径。
