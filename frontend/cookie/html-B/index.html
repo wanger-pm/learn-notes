@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>html-B</div>
+  <div>在域名为 http://localhost:3002 的网页请求域名为 http://localhost:3002 的服务，查看cookie能不能成功</div>
+  <div>结果：可以设置成功</div>
+  <div>另外：如果 http://localhost:3001 先前设置了cookie，则上面的请求时也会带上在 3001 上设置的相应 cookie。猜测其原因是 cookie 的设置不区分端口号 </div>
+  <br>
+  <br>
+  <br>
+  <button onclick="fn1()">
+    请求 /message
+  </button>
+  <button onclick="fn2()">
+    设置 cookie
+  </button>
+  <script>
+    const fn1 = async () => {
+      const res = await fetch('/message');
+      const json = await res.json();
+      console.log(json);
+    };
+
+    const fn2 = async () => {
+      const res = await fetch('/setCookie');
+      const json = await res.json();
+      console.log(json);
+    };
+  </script>
+</body>
+
+</html>

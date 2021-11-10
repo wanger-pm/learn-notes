@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>html-B</div>
+  <div>在域名为 http://localhost:3002 的网页请求域名为 http://localhost:3001 的服务，查看cookie能不能成功</div>
+  <div>结果：在chrome以及firefox上没有携带相应的cookie，新的cookie也没有设置成功</div>
+  <div>原因：猜测原因是测试使用的chrome和firefox版本较高，默认使用了 Lax cookie 策略，无法跨域传递cookie</div>
+  <div>如果想跨域传递cookie，需要在服务端设置 `SameSite=None; Secure`，同时在 https 下使用</div>
+  <br>
+  <br>
+  <br>
+  <button onclick="fn1()">
+    请求 /message
+  </button>
+  <button onclick="fn2()">
+    设置 cookie
+  </button>
+  <script>
+    const fn1 = async () => {
+      const res = await fetch('http://localhost:3001/message');
+      const json = await res.json();
+      console.log(json);
+    };
+
+    const fn2 = async () => {
+      const res = await fetch('http://localhost:3001/setCookie');
+      const json = await res.json();
+      console.log(json);
+    };
+  </script>
+</body>
+
+</html>
