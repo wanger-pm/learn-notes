@@ -19,6 +19,27 @@ for (let key in used) {
 }
 ```
 
+## 补充
+
+### 上文中的 `rss`，`heapTotal`，`heapUsed` 具体指什么？
+
+为了回答这个问题，需要先了解V8的内存方案。
+
+运行程序运行时始终会在内存中占用一定的空间。这个空间被称为 `Resident Set`。V8使用类似于Java虚拟机的方案，并将内存划分为段：
+
+- Code: 实际被执行的代码
+- Stack（栈）： 包含所有值类型（Integer或Boolean）的所有值类型，指针引用堆和指针定义程序的控制流程的指针
+- Heap（堆）：专用于存储对象，字符串和闭包等引用类型的存储段。
+
+![](./images/02.png)
+
+这样的话，问题就很好解答了
+
+- rss: Resident Set Size
+- heapTotal: Total Size of the Heap
+- heapUsed: Heap actually Used
+
 参考文档：
 
 - [Guide: How To Inspect Memory Usage in Node.js](https://www.valentinog.com/blog/node-usage/)- [上面链接的中文翻译](https://www.lema.fun/post/47e93hs9s)
+- [What do the return values of node.js process.memoryUsage() stand for?](https://stackoverflow.com/questions/12023359/what-do-the-return-values-of-node-js-process-memoryusage-stand-for)
