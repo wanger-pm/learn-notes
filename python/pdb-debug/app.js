@@ -127,7 +127,7 @@ const debug = new Debug(options);
 //   debug.push('c');    // 运行至下一个断点
 //   debug.push('n');    // 单步执行
 //   debug.push('l');    // 查看当前运行到第几行（连续两次执行这个命令似乎有些问题）
-//   debug.push('c');    // 查看当前运行到第几行（连续两次执行这个命令似乎有些问题）
+//   debug.push('c');    // 运行至下一个断点
 // }, 100)
 
 
