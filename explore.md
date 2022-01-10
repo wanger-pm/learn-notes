@@ -59,3 +59,15 @@ if __name__ == '__main__':
 
 - [github cef](https://github.com/chromiumembedded/cef)
 - [vefpython example](https://github.com/cztomczak/cefpython#examples)
+
+### Mac 电脑查看温度
+
+使用 iStats
+
+```bash
+# 安装
+sudo gem install iStats
+
+# 查看温度
+istats
+```
