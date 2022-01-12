@@ -2,9 +2,9 @@
 
 ## 2022
 
-## 01-08
+### 01-08
 
-### Chromium Embedded Framework
+#### Chromium Embedded Framework
 
 Chromium Embedded Framework (CEF) 是一个 Chromium 嵌入式框架。使用 python 的 cefpython 库可以很方便的调起它：
 
@@ -60,7 +60,7 @@ if __name__ == '__main__':
 - [github cef](https://github.com/chromiumembedded/cef)
 - [vefpython example](https://github.com/cztomczak/cefpython#examples)
 
-### Mac 电脑查看温度
+#### Mac 电脑查看温度
 
 使用 iStats
 
@@ -71,3 +71,23 @@ sudo gem install iStats
 # 查看温度
 istats
 ```
+
+### 01-11
+
+#### 设计模式六大原则
+
+六大设计原则主要是指：
+
+- 单一职责原则（Single Responsibility Principle）；
+- 开闭原则（Open Closed Principle）；
+- 里氏替换原则（Liskov Substitution Principle）；
+- 迪米特法则（Law of Demeter），又叫“最少知道法则”；
+- 接口隔离原则（Interface Segregation Principle）；
+- 依赖倒置原则（Dependence Inversion Principle）。
+
+参考链接：
+
+- [设计模式六大原则](https://tianweili.github.io/page/2/)
+- [设计模式6大原则](https://juejin.cn/post/6844903545561432077)
+- [快速理解-设计模式六大原则](https://www.jianshu.com/p/807bc228dbc2)
+- [六大设计原则超详细介绍（再不理解你打我）](https://zhuanlan.zhihu.com/p/110130347)
