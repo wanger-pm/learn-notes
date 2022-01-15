@@ -91,3 +91,16 @@ istats
 - [设计模式6大原则](https://juejin.cn/post/6844903545561432077)
 - [快速理解-设计模式六大原则](https://www.jianshu.com/p/807bc228dbc2)
 - [六大设计原则超详细介绍（再不理解你打我）](https://zhuanlan.zhihu.com/p/110130347)
+
+### 01-12
+
+#### manim
+
+一个超级牛的 python 可视化库，youtube 3blue1brown 的作者写的。
+
+参考链接：
+
+- [github 源码](https://github.com/3b1b/manim/tree/master/manimlib/utils)
+- [演示demo](https://3b1b.github.io/manim/getting_started/example_scenes.html)
+- [文档](https://3b1b.github.io/manim/getting_started/installation.html)
+- [文档](https://docs.manim.community/en/stable/)
