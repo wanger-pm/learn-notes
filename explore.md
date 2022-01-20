@@ -104,3 +104,24 @@ istats
 - [演示demo](https://3b1b.github.io/manim/getting_started/example_scenes.html)
 - [文档](https://3b1b.github.io/manim/getting_started/installation.html)
 - [文档](https://docs.manim.community/en/stable/)
+
+### 01-20
+
+#### fuite
+
+一个测试网页是否有内存泄漏的工具。
+
+使用：
+
+```bash
+npx fuite https://wangyulue.com/
+```
+
+参考链接：
+
+- [github 仓库](https://github.com/nolanlawson/fuite)
+
+#### 图表库
+
+- [echarts](https://github.com/apache/echarts)
+- [Chart.js](https://github.com/chartjs/Chart.js)
