@@ -125,3 +125,13 @@ npx fuite https://wangyulue.com/
 
 - [echarts](https://github.com/apache/echarts)
 - [Chart.js](https://github.com/chartjs/Chart.js)
+
+### 01-23
+
+#### chokidar
+
+nodeJS 监听文件或者目录变动的库
+
+参考链接：
+
+- [github 仓库](https://github.com/paulmillr/chokidar)
