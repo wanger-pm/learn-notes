@@ -107,7 +107,7 @@ istats
 
 ### 01-20
 
-#### fuite
+#### [fuite](https://github.com/nolanlawson/fuite)
 
 一个测试网页是否有内存泄漏的工具。
 
@@ -117,10 +117,6 @@ istats
 npx fuite https://wangyulue.com/
 ```
 
-参考链接：
-
-- [github 仓库](https://github.com/nolanlawson/fuite)
-
 #### 图表库
 
 - [echarts](https://github.com/apache/echarts)
@@ -128,10 +124,14 @@ npx fuite https://wangyulue.com/
 
 ### 01-23
 
-#### chokidar
+#### [chokidar](https://github.com/paulmillr/chokidar)
 
 nodeJS 监听文件或者目录变动的库
 
-参考链接：
+### 01-24
 
-- [github 仓库](https://github.com/paulmillr/chokidar)
+#### [acorn](https://github.com/paulmillr/chokidar)
+
+一个解析 JS AST 语法树的库。
+
+官方描述：**A tiny, fast JavaScript parser, written completely in JavaScript.**
