@@ -135,3 +135,14 @@ nodeJS 监听文件或者目录变动的库
 一个解析 JS AST 语法树的库。
 
 官方描述：**A tiny, fast JavaScript parser, written completely in JavaScript.**
+
+### 01-25
+
+#### 产品步骤引导库
+
+- [shepherd](https://github.com/shipshapecode/shepherd)
+- [intro.js](https://github.com/usablica/intro.js)
+
+参考链接：
+
+- [掘金：7个很棒的JavaScript产品步骤引导库](https://juejin.cn/post/6844904128393510919)
