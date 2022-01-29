@@ -167,3 +167,7 @@ inode是一个重要概念，是理解Unix/Linux文件系统和硬盘储存的�
 
 - [阮一峰：理解inode](https://www.ruanyifeng.com/blog/2011/12/inode.html)
 - [wiki: inode](https://zh.wikipedia.org/wiki/Inode)
+
+#### MarkDown 链接中有空格怎么办
+
+将空格替换成 %20 即可
