@@ -154,3 +154,16 @@ nodeJS 监听文件或者目录变动的库
 一篇不错的文章，初衷是分享在现代软件开发过程中发现的一些系统性问题，并加深对这些问题的认识。在当下来看有些过时，但是仍然比较经典，值得一看。
 
 - [link](https://12factor.net/zh_cn/)
+
+### 01-29
+
+#### 理解inode
+
+inode是一个重要概念，是理解Unix/Linux文件系统和硬盘储存的基础。
+
+理解inode，不仅有助于提高系统操作水平，还有助于体会Unix设计哲学，即如何把底层的复杂性抽象成一个简单概念，从而大大简化用户接口。
+
+参考阅读：
+
+- [阮一峰：理解inode](https://www.ruanyifeng.com/blog/2011/12/inode.html)
+- [wiki: inode](https://zh.wikipedia.org/wiki/Inode)
