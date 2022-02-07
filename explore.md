@@ -171,3 +171,9 @@ inode是一个重要概念，是理解Unix/Linux文件系统和硬盘储存的�
 #### MarkDown 链接中有空格怎么办
 
 将空格替换成 %20 即可
+
+### 02-07
+
+#### nx 和 lerna 的区别
+
+- [stackoverflow:the difference between nx and Lerna](https://stackoverflow.com/questions/67000436/the-difference-between-nx-and-lerna-monorepos)
