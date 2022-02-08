@@ -177,3 +177,9 @@ inode是一个重要概念，是理解Unix/Linux文件系统和硬盘储存的�
 #### nx 和 lerna 的区别
 
 - [stackoverflow:the difference between nx and Lerna](https://stackoverflow.com/questions/67000436/the-difference-between-nx-and-lerna-monorepos)
+
+### 02-08
+
+#### [Mermaid](https://github.com/mermaid-js/mermaid/blob/develop/README.zh-CN.md)
+
+Mermaid 是一个基于 Javascript 的图表绘制工具，通过解析类 Markdown 的文本语法来实现图表的创建和动态修改。Mermaid 诞生的主要目的是让文档的更新能够及时跟上开发进度。
