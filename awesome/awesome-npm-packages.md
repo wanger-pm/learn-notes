@@ -59,6 +59,10 @@ JS 数据验证库
 - [nw.js](https://github.com/nwjs/nw.js)
 - [tauri](https://github.com/tauri-apps/tauri)
 
+### 文件操作
+
+- [fs-extra](https://github.com/jprichardson/node-fs-extra) 比原生 fs 模块更好用的文件操作库
+
 ### 其他
 
 - [tsconfig-paths](https://www.npmjs.com/package/tsconfig-paths) 在 node 或者 ts-node 中解析 tsconfig.json 中映射的路径。
