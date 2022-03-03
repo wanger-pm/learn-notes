@@ -130,7 +130,7 @@ nodeJS 监听文件或者目录变动的库
 
 ### 01-24
 
-#### [acorn](https://github.com/paulmillr/chokidar)
+#### [acorn](https://github.com/acornjs/acorn)
 
 一个解析 JS AST 语法树的库。
 
