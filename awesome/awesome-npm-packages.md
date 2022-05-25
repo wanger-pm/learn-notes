@@ -63,6 +63,23 @@ JS 数据验证库
 
 - [fs-extra](https://github.com/jprichardson/node-fs-extra) 比原生 fs 模块更好用的文件操作库
 
+### 将 div 转换成 图片
+
+- [html2canvas](http://html2canvas.hertzen.com/)
+- [image-conversion](https://github.com/WangYuLue/image-conversion)
+
+```js
+import html2canvas from 'html2canvas';
+import { canvastoFile, downloadFile } from 'image-conversion';
+
+html2canvas(document.querySelector("#target-dom")).then(async canvas => {
+  // console.log(canvas);
+  const file = await canvastoFile(canvas);
+  // console.log(file);
+  downloadFile(file);
+});
+```
+
 ### 其他
 
 - [tsconfig-paths](https://www.npmjs.com/package/tsconfig-paths) 在 node 或者 ts-node 中解析 tsconfig.json 中映射的路径。
