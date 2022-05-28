@@ -83,6 +83,8 @@ node -r tsconfig-paths/register main.js
 ts-node -r tsconfig-paths/register main.ts
 ```
 
+可以用基于该库的 [tsconfig-paths-webpack-plugin](https://www.npmjs.com/package/tsconfig-paths-webpack-plugin) 在 webpack 中很方便使用
+
 #### 参考链接
 
 - [npm tsconfig-paths](https://www.npmjs.com/package/tsconfig-paths)
