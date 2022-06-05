@@ -197,3 +197,11 @@ div{
 ```
 
 #### 了解了 React.FC<>
+
+### 06-05
+
+#### tsup
+
+一个零配置的 ts 工程构建工具
+
+- [参考文章](https://antfu.me/posts/publish-esm-and-cjs#esm-cjs)
