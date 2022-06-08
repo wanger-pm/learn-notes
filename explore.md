@@ -205,3 +205,11 @@ div{
 一个零配置的 ts 工程构建工具
 
 - [参考文章](https://antfu.me/posts/publish-esm-and-cjs#esm-cjs)
+
+### 06-08
+
+#### css 模糊匹配类
+
+```css
+$('*[class*="legend-list"]')
+```
