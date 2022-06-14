@@ -1,4 +1,4 @@
-# vscode 快捷键(mac版)
+# vscode 快捷键(mac 版)
 
 ## Ctrl + [*]
 
@@ -45,7 +45,7 @@
 - 👍 option + ←/→ : 左右移动当前光标（可跳过单词）
 - 👍 👍 option + Shift +（拖动鼠标）: 多光标框选（适合在连续多行前面插入内容）
 - 👍 option + command + ↑ / ↓ : 插入多光标
-- option + Shift + ←/→ : 左右切换文件
+- option + command + ←/→ : 左右切换文件
 - option + Shift + F : 格式化文档
 - option + z : 自动换行
 - option + delete : 删除当前单词
