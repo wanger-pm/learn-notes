@@ -8,7 +8,7 @@
 - Ctrl + g : 跳转到行
 - Ctrl + t : 当前光标前后字母互换
 - Ctrl + shift + ` : 创建新终端
-- Ctrl + tab : 切换文件
+- 👍 Ctrl + tab : 切换文件
 
 - 👍 Ctrl + w : 切换窗口
 - 👍 Ctrl + r : 选择一个项目并在新窗口打开
@@ -27,7 +27,7 @@
 
 - 👍 command + Shift + p : 显示命令面板
 - 👍 command + Shift + f : 显示侧边栏搜索
-- 👍 command + Shift + f : 显示 markdown
+- 👍 command + Shift + v : 显示 markdown
 - 👍 command + p : 快速打开
 - command + i : 触发提示
 - 👍 command + Shift + N : 打开一个新窗口
@@ -41,10 +41,10 @@
 ## option + [*]
 
 - option + ↑ / ↓ : 当前行上下移动
-- 👍 option + Shift + ↑ / ↓ : 复制并上下移动当前行
+- option + Shift + ↑ / ↓ : 复制并上下移动当前行
 - 👍 option + ←/→ : 左右移动当前光标（可跳过单词）
 - 👍 👍 option + Shift +（拖动鼠标）: 多光标框选（适合在连续多行前面插入内容）
-- 👍 option + Shift + ↑ / ↓ : 插入多光标
+- 👍 option + command + ↑ / ↓ : 插入多光标
 - option + Shift + ←/→ : 左右切换文件
 - option + Shift + F : 格式化文档
 - option + z : 自动换行
