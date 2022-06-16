@@ -35,9 +35,9 @@ yarn config set registry https://mirrors.huaweicloud.com/repository/npm/
 yarn config set disturl https://mirrors.huaweicloud.com/nodejs/
 yarn config set electron_mirror https://mirrors.huaweicloud.com/electron/
 # 淘宝源
-yarn config set registry https://npmmirror.com/
-yarn config set disturl https://npmmirror.com/mirrors/node/
-yarn config set electron_mirror https://npmmirror.com/mirrors/electron/
+yarn config set registry https://registry.npmmirror.com/
+yarn config set disturl https://registry.npmmirror.com/node/
+yarn config set electron_mirror https://registry.npmmirror.com/electron/
 
 # 若果是使用npm，将yarn改为npm即可
 
@@ -47,9 +47,9 @@ npm config set disturl https://mirrors.huaweicloud.com/nodejs/
 npm config set electron_mirror https://mirrors.huaweicloud.com/electron/
 
 # 淘宝源
-npm config set registry https://npmmirror.com/
-npm config set disturl https://npmmirror.com/mirrors/node/
-npm config set electron_mirror https://npmmirror.com/mirrors/electron/
+npm config set registry https://registry.npmmirror.com/
+npm config set disturl https://registry.npmmirror.com/node/
+npm config set electron_mirror https://registry.npmmirror.com/electron/
 
 ```
 
