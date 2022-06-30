@@ -45,6 +45,7 @@ yarn config set electron_mirror https://registry.npmmirror.com/electron/
 npm config set registry https://mirrors.huaweicloud.com/repository/npm/
 npm config set disturl https://mirrors.huaweicloud.com/nodejs/
 npm config set electron_mirror https://mirrors.huaweicloud.com/electron/
+npm config set electron_builder_binaries_mirror https://mirrors.huaweicloud.com/electron-builder-binaries/
 
 # 淘宝源
 npm config set registry https://registry.npmmirror.com/
